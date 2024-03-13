@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agile Dragon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="indexStyle.css" rel="stylesheet">
+    <link rel="icon" href="Images/MiniLogo.png" type="image/png">
+    
+</head>
+<body style="background-color: #393E46">
+
+    <section>
+            <nav class="nav" id="navbar">
+                <div class="menu_topo">
+                    <ul>
+                        <li class="menu" onclick="scrollToMiddle('section1')">HOME</li>
+                        <li class="menu"  onclick="scrollToMiddle('section2')">PRODUTOS</li>
+                        <li><img src="Images/MiniLogo.png" width="61px" height="61px"></li>
+                        <li class="menu" onclick="scrollToMiddle('section3')">SOBRE</li>
+                        <li class="menu" onclick="scrollToMiddle('section4')">CONTATO</li>
+                    </ul>
+                </div>
+            </nav>
+
+            <nav class="nav_mobile" id="navbar_mobile">
+                <div class="menu_topo_mobile" id="navbar_mobile2">
+                    <ul>
+                        <li class="menu_mobile" style="font-size: 2em;" id="abrir_menu_lateral">☰</li>
+                        <li class="menu_mobile" style="flex-grow: 1;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;"><img src="Images/MiniLogo.png" width="61px" height="61px"></li>
+                    </ul>
+                </div>
+
+                <div class="nav-menu-lateral" id="menu_mobile">
+                    <li><button>HOME</button></li>
+                    <li><button>PRODUTOS</button></li>
+                    <li><button>SOBRE</button></li>
+                    <li><button>CONTATO</button></li>
+                </div>
+            </nav>
+
+          
+            <div class="banner-container" id="section1">
+                <img src="Images/img_topo.png" width="100%">
+                
+                <div class="banner_esquerda">
+                    <div class="position">
+                        <header>
+                            <h2>Agile Dragon</h2>
+                            <p>Desenvolvemos sistemas ERP, e-commerces e landing pages para impulsionar o sucesso dos negócios, oferecendo soluções personalizadas e eficientes</p>
+                            <button>SAIBA MAIS</button>
+                        </header>
+                    </div>
+                </div>
+            </div>  
+    </section>
+
+    <section class="meio_caracteristicas" id="section3">
+        <div class="position_caracteristicas">
+            <div class="card1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="104" height="99" fill="#0DADB5" class="bi bi-record-circle-fill" viewBox="0 0 16 16" id="icone1">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                </svg>
+                <h2>Entrega Rápida</h2>
+                <p>Utilizando metodologias ágeis, realizamos entregas rápidas com colaborações, interações e adaptações constantes, garantindo produtos de ótima qualidade.</p>
+            </div>
+            <div class="card2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="104" height="99" fill="#0DADB5" class="bi bi-headset" viewBox="0 0 16 16" id="icone2">
+                    <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5"/>
+                  </svg>
+                <h2>suporte</h2>
+                <p>Estamos disponíveis 24 horas para garantir que suas necessidades sejam atendidas com eficiência e rapidez, proporcionando um serviço de qualidade incomparável.</p>
+            </div>
+            <div class="card3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="104" height="99" fill="#0DADB5" class="bi bi-lightbulb" viewBox="0 0 16 16" id="icone3">
+                    <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
+                  </svg>
+                <h2>INOVAÇÃO</h2>
+                <p>Promovemos uma cultura de inovação, incentivando a experimentação e a colaboração, resultando em soluções pioneiras que impulsionam o crescimento e a excelência.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="carrosel" id="section2">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"  aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <div class="controle_possitions_carrousel">
+                    <div class="controlando_positons">
+                        <div class="box-img">
+                            <img src="Images/computer_img.png">
+                        </div>
+                        <div class="box-text-img">
+                            <h2>SISTEMAS ERP</h2>
+                            <P>O comércio eletrônico, ou e-commerce, revolucionou a forma como as pessoas compram e vendem produtos e serviços, proporcionando uma experiência de compra conveniente, eficiente e global. Esse modelo de negócios explora as possibilidades oferecidas pela internet para criar uma plataforma onde transações comerciais ocorrem virtualmente. Vamos explorar o que é o e-commerce e algumas de suas possibilidades impactantes.</P>
+                            <button>VER EXEMPLO</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item active">
+                <div class="controle_possitions_carrousel">
+                    <div class="controlando_positons">
+                        <div class="box-img" >
+                            <img src="Images/computer_img.png">
+                        </div>
+                        <div class="box-text-img">
+                            <h2>E-COMMERCES</h2>
+                            <P>O comércio eletrônico, ou e-commerce, revolucionou a forma como as pessoas compram e vendem produtos e serviços, proporcionando uma experiência de compra conveniente, eficiente e global. Esse modelo de negócios explora as possibilidades oferecidas pela internet para criar uma plataforma onde transações comerciais ocorrem virtualmente. Vamos explorar o que é o e-commerce e algumas de suas possibilidades impactantes.</P>
+                            <button>VER EXEMPLO</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="controle_possitions_carrousel">
+                    <div class="controlando_positons">
+                        <div class="box-img">
+                            <img src="Images/computer_img.png">
+                        </div>
+                        <div class="box-text-img">
+                            <h2>LANDING PAGES</h2>
+                            <P>O comércio eletrônico, ou e-commerce, revolucionou a forma como as pessoas compram e vendem produtos e serviços, proporcionando uma experiência de compra conveniente, eficiente e global. Esse modelo de negócios explora as possibilidades oferecidas pela internet para criar uma plataforma onde transações comerciais ocorrem virtualmente. Vamos explorar o que é o e-commerce e algumas de suas possibilidades impactantes.</P>
+                            <button>VER EXEMPLO</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+    <section class="dados_contatos">
+        <div class="entre_em_contato">
+            <h2>ENTRE EM CONTATO</h2>
+            <p>Preencha todos os campos abaixo para enviar uma mensagem.</p>
+
+            <form>
+                <input placeholder="SEU NOME COMPLETO" class="input_nome_completo">
+                <div>
+                    <input placeholder="TELEFONE">
+                    <input placeholder="E-MAIL">
+                </div>
+                <select>
+                    <option selected>ESCOLHA O ASSUNTO</option>
+                    <option>SISTEMA ERP</option>
+                    <option>E-COMMERCE</option>
+                    <option>LANDING PAGE</option>
+                    <option>OUTROS...</option>
+                </select>
+
+                <button type="submit" class="btn_form">SOLICITAR CONTATO</button>
+            </form>
+        </div>
+
+        <div class="dados_para_contato">
+                <h2>DADOS PARA CONTATO</h2>
+                <p>Entre em contato conosco e faça um orçamento.</p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0DADB5" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                </svg> (xx) xxxxx-xxxx<br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0DADB5" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                </svg> emailficticio@gmail.com</p>
+        </div>
+    </section>
+
+    <section class="final" id="section4">
+        <div>
+            <h2>CONTEÚDO</h2>
+            <p>Landing pages</p>
+            <p>E-commerce</p>
+            <p>Sistema ERP</p>
+        </div>
+        <div>
+            <h2>INFORMAÇÕES</h2>
+            <p>Sobre nós</p>
+            <p>Contatos</p>
+            <p>Perguntas frequentes</p>
+            <p>Trabalhe conosco</p>
+            <p>Termos e condições</p>
+            <p>Política de privacidade</p>
+        </div>
+        <div>
+            <h2>REDES SOCIAIS</h2>
+
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-instagram" viewBox="0 0 16 16" id="instagram">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-facebook" viewBox="0 0 16 16" id="facebook">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-linkedin" viewBox="0 0 16 16" id="linkedin">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                </svg>
+            </div>
+        </div>
+
+        
+    </section>
+
+    <div class="footer_final">
+        <h2>Agile Dragon</h2>
+        <p>copyright @ 2024 Agile Dragon Company. Todos os direitos reservados.</p>
+    </div>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Pacifico&display=swap" rel="stylesheet">
+</body>
+</html>
+
+<script>
+     let prevScrollPos = window.pageYOffset;
+    
+ window.onscroll = function() {
+    let currentScrollPos = window.pageYOffset;
+
+    if (prevScrollPos > currentScrollPos) {
+        
+       document.getElementById("navbar").style.top = "0"; 
+       document.getElementById("navbar_mobile").style.top = "0"; 
+       
+       document.getElementById("navbar_mobile2").style.top = "0"; 
+        
+    } else {
+        if (currentScrollPos > 0) {
+       document.getElementById("navbar").style.top = "-100px"; 
+       document.getElementById("navbar_mobile").style.top = "-100px"; 
+       document.getElementById("navbar_mobile2").style.top = "-100px"; 
+        }
+    }
+
+    prevScrollPos = currentScrollPos;
+};
+
+function scrollToMiddle(sectionId) {
+            const section = document.getElementById(sectionId);
+
+            if (section) {
+                const offsetTop = section.offsetTop;
+                const windowHeight = window.innerHeight;
+                const middlePosition = offsetTop - (windowHeight / 2) + (section.clientHeight / 2);
+
+                window.scrollTo({
+                    top: middlePosition,
+                    behavior: "smooth"
+                });
+
+                // Adicione uma classe para destacar visualmente a seção selecionada
+                section.classList.add('selected-section');
+
+                // Remova a classe após algum tempo (opcional)
+                setTimeout(() => {
+                    section.classList.remove('selected-section');
+                }, 2000);  // Remover após 2 segundos (ajuste conforme necessário)
+            }
+        }
+
+   menu_lateral_mobile = document.getElementById("menu_mobile")
+   btn_dropdown = document.getElementById("abrir_menu_lateral");
+
+   function menu() {
+    if (menu_lateral_mobile.style.visibility === 'hidden' || menu_lateral_mobile.style.visibility === '') {
+        menu_lateral_mobile.style.visibility = "visible";
+        setTimeout(function() {
+            menu_lateral_mobile.style.transform = "translateX(0%)";
+        }, 200);
+    } else {
+        setTimeout(function() {
+            menu_lateral_mobile.style.visibility = 'hidden';
+        }, 200);
+        menu_lateral_mobile.style.transform = "translateX(-100%)";
+    }
+}
+
+btn_dropdown.addEventListener("click", menu);
+
+   document.addEventListener("click", function(event) {
+    if (!menu_lateral_mobile.contains(event.target) && event.target !== btn_dropdown) {
+        if (menu_lateral_mobile.style.visibility === 'visible') {
+            setTimeout(function() {
+                menu_lateral_mobile.style.visibility = 'hidden';
+            }, 200);
+            menu_lateral_mobile.style.transform = "translateX(-100%)";
+        }
+    }
+});
+</script>
