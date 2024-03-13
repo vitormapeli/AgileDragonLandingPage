@@ -152,7 +152,7 @@ body::-webkit-scrollbar-track {
     }
 
     & header{
-        width: 30%;
+        width: 29em;
     }
 
     & h2{
@@ -189,6 +189,7 @@ body::-webkit-scrollbar-track {
         display: flex;
         justify-content: space-between;
         width: 60%;
+        gap: 2em;
 
         & div:hover{
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -211,7 +212,7 @@ body::-webkit-scrollbar-track {
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 25%;
+            width: 20em;
             border-radius: 14px;
             transition: 300ms;
             cursor: default;
@@ -219,7 +220,8 @@ body::-webkit-scrollbar-track {
             & h2{
                 color: #0DADB5;
                 font-family: "Bebas Neue";
-                font-size: 36px;
+                font-size: 1.9em;
+                text-align: center;
             }
 
             & p{
@@ -247,6 +249,16 @@ body::-webkit-scrollbar-track {
         display: flex;
         justify-content: space-between;
 
+        & img{
+            width: 25em;
+        }
+
+        & .box-img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         & div{
             padding: 100px 0px;
 
@@ -263,7 +275,7 @@ body::-webkit-scrollbar-track {
             }
 
             & button{
-                width: 50%;
+                width: 10em;
                 background-color: #0DADB5;
                 color: #fff;
                 border: 1px solid #01888E;
@@ -284,7 +296,7 @@ body::-webkit-scrollbar-track {
     & h2{
         margin-bottom: 0px;
         font-family: "Bebas Neue";
-        font-size: 48px;
+        font-size: 45px;
         color: #0DADB5;
         height: 45px;
     }
@@ -299,23 +311,6 @@ body::-webkit-scrollbar-track {
             flex-direction: column;
             justify-content: center;
             width: 95%;
-
-            & button{
-                font-size: 26px;
-                width: 100%;
-                height: 50px;
-                font-family: "OLD STANDARD TT";
-                padding: 5px;
-                background-color: #0eb7c0;
-                border: 1px solid #01888E;
-                color: #fff;
-                transition: 500ms;
-            }
-
-            & button:hover{
-                background-color: #11d8e2;
-                transition: 500ms;
-            }
 
             & input:focus{
                 outline: none;
@@ -423,4 +418,344 @@ body::-webkit-scrollbar-track {
         }
     }
 
+}
+
+.card1{
+    animation: slideRIGHT 1s ease-out;
+}
+
+.card2{
+    animation: slideMID 1s ease-out;
+}
+
+.card3{
+    animation: slideLEFT 1s ease-out;
+}
+
+.btn_form{
+    font-size: 26px;
+    width: 100%;
+    height: 50px;
+    font-family: "OLD STANDARD TT";
+    padding: 5px;
+    background-color: #0eb7c0;
+    border: 1px solid #01888E;
+    color: #fff;
+    transition: 500ms;
+}
+
+.menu_topo_mobile{
+    background-color: rgb(34, 40, 49, 0.5);
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    & ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            margin-bottom: 0;
+    }
+}
+
+.menu_mobile{
+    width: auto;
+    list-style: none;
+    transition: top 0.3s;
+}
+
+
+.nav-menu-lateral{
+    display: block;
+    list-style: none;
+    position: fixed;
+    top: 61px;
+    z-index: 99999;
+    width: 90%;
+    background-color: #393E46;
+    height: 100%;
+    border-right: 2px solid #171718;
+    visibility: hidden;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+
+}
+
+.nav-menu-lateral button{
+    width: 100%;
+    height: 3em;
+    font-family: "Bebas neue";
+    font-size: 2em;
+    border: none;
+    border-bottom: 2px solid  #171718;
+    background-color: #222831;
+    color: #fff;
+}
+
+.footer_final{
+    padding-left: 30px;
+    background-color: #222831;
+
+    & h2{
+        color: #0DADB5;
+        font-family: "Pacifico";
+        margin-bottom: 0;
+        padding-top: 10px;
+
+    }
+
+    & p{
+        color: #737373;
+        padding-top: 20px;
+        font-family: "Old Standard TTh";
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .card1{
+        animation: slideMID 1s ease-out;
+    }
+    
+    .card2{
+        animation: slideMID 1s ease-out;
+    }
+    
+    .card3{
+        animation: slideMID 1s ease-out;
+    }
+
+    .final{
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        border-bottom: 1px solid #484B50;
+        padding-bottom: 20px;
+
+        & div{
+            width: 60%;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    header{
+        width:  15em !important;
+    }
+    .nav{
+        display: none;
+    }
+
+    .banner-container{
+
+        & img{
+            width: 120%;
+            content: url('Images/imgtoporemote.png');
+        }
+
+        & .banner_esquerda {
+            top: 25%;
+        }
+    }
+
+    & .controlando_positons{
+        justify-content: center;
+        flex-direction: column;
+
+        & button{
+            width: 100% !important;
+        }
+        
+        & .box-img{
+            padding-bottom: 0 !important;
+        }
+    }
+
+    .box-text-img{
+        padding-top: 0;
+    }
+
+    .dados_contatos{
+        flex-direction: column-reverse;
+
+        & h2{
+            font-size: 30px;
+        }
+    }
+
+    .dados_para_contato{
+        border-bottom: 1px solid black;
+    }
+
+    .entre_em_contato{
+        width: 100% !important;
+
+        & input{
+            font-size: 12px !important;
+        }
+
+        & select {
+            font-size: 12px !important;
+        }
+    }
+
+    .position_caracteristicas{
+        width: 100% !important;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .btn_form{
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+
+    .card1{
+        animation: slideMID 1s ease-out;
+    }
+    
+    .card2{
+        animation: slideMID 1s ease-out;
+    }
+    
+    .card3{
+        animation: slideMID 1s ease-out;
+    }
+
+    .final{
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        border-bottom: 1px solid #484B50;
+        padding-bottom: 20px;
+
+        & div{
+            width: 60%;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    header{
+        width:  19em !important;
+    }
+    .nav{
+        display: none;
+    }
+
+    .banner-container{
+
+        & img{
+            content: url('Images/imgtoporemote.png');
+        }
+
+        & .banner_esquerda {
+            top: 25%;
+        }
+    }
+
+    & .controlando_positons{
+        justify-content: center;
+        flex-direction: column;
+
+        & button{
+            width: 100% !important;
+        }
+        
+        & .box-img{
+            padding-bottom: 0 !important;
+        }
+    }
+
+    .box-text-img{
+        padding-top: 0;
+    }
+
+    .dados_contatos{
+        flex-direction: column-reverse;
+    }
+
+    .dados_para_contato{
+        border-bottom: 1px solid black;
+    }
+
+    .entre_em_contato{
+        width: 100% !important;
+    }
+
+    .position_caracteristicas{
+        width: 100% !important;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+
+    .entre_em_contato{
+        width: 60% !important;
+    }
+
+    .controle_possitions_carrousel{
+        & .controlando_positons{
+            justify-content: center;
+            flex-direction: column;
+
+            & button{
+                width: 100% !important;
+            }
+            
+            & .box-img{
+                padding-bottom: 0;
+            }
+        }
+    }
+    .btn_form {
+       font-size: 1.3em;  
+    }
+
+    .position_caracteristicas{
+       width: 90% !important;
+    }
+
+    .nav{
+        & div{
+            padding: 0px 30px !important;
+
+            & ul{
+                padding: 0;
+            }
+        }
+    }
+
+    .banner-container{
+
+        & header{
+            width: 38em;
+        }
+        & p{
+            font-size: 15px !important;
+        }
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px){
+    .btn_form {
+       font-size: 1.3em;  
+    }
+
+    .position_caracteristicas{
+       width: 80% !important;
+    }
 }
