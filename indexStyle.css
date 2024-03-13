@@ -447,6 +447,7 @@ body::-webkit-scrollbar-track {
 .menu_topo_mobile{
     background-color: rgb(34, 40, 49, 0.5);
     position: fixed;
+    visibility: hidden;
     z-index: 999999;
     top: 0;
     width: 100%;
@@ -515,6 +516,11 @@ body::-webkit-scrollbar-track {
 }
 
 @media (min-width: 320px) and (max-width: 480px){
+
+    .menu_topo_mobile{
+        visibility: visible;
+    }
+
     .card1{
         animation: slideMID 1s ease-out;
     }
@@ -616,6 +622,10 @@ body::-webkit-scrollbar-track {
 }
 
 @media (min-width: 481px) and (max-width: 768px){
+
+    .menu_topo_mobile{
+        visibility: visible;
+    }
 
     .card1{
         animation: slideMID 1s ease-out;
