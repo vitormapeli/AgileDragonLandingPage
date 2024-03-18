@@ -1,2 +1,9 @@
-Agile Dragon
-Desenvolvimento de uma Landing Page para estudos e testes.
+## Agile Dragon - Landig Page responsiva
+
+Uma landing page criada do 0
+
+## Linguagens utilizadas
+- HTML
+- CSS
+
+
