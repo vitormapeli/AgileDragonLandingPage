@@ -11,4 +11,4 @@ Páginas criadas:
 - Home
 
 > [!NOTE]
-> Concluid
+> Concluído
