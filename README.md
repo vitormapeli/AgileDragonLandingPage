@@ -10,4 +10,5 @@ Linguagens utilizadas:
 Páginas criadas:
 - Home
 
-
+> [!NOTE]
+> Concluid
