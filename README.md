@@ -1,10 +1,13 @@
+# LandingPage - Agiledragon
+Vitor H. Mapeli
 
-## Agile Dragon - Landig Page responsiva
-
-Uma landing page criada do 0
-
-## Linguagens utilizadas
+Linguagens utilizadas:
 - HTML
 - CSS
+- PHP
+- JS
 
-Link - https://vitormapeli.github.io/AgileDragonLandingPage/
+Páginas criadas:
+- Home
+
+
